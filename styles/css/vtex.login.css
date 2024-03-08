@@ -1,0 +1,38 @@
+.label{
+    color:#4F4242;
+    font-size:12px;
+    text-transform: none;
+    padding-left:1px;
+    display:block;
+    margin-top:3px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--topbar) .profileIcon{
+    width:19px;
+    height:19px;
+    overflow:visible;
+}
+.container{
+    margin-right:37px;
+}
+.container :global(.vtex-button){
+    border:0;
+    min-height: auto;
+}
+.container :global(.vtex-button__label){
+    padding:0 !important;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+    .container{
+        margin-right:31px;
+    }
+    .label{
+        display:none;
+    }
+    .container .profileIcon{
+        width:19px;
+        height:19px;
+        overflow:visible;
+    }
+}

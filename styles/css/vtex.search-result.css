@@ -1,22 +1,245 @@
-.galleryLayoutOptionButton {
-  background-color: #F0F0F0;
-  color: #3F3F40;
-  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+/* DESKTOP */
+.filter__container--title,
+.filter__container--brand,
+.filter__container--selectedFilters,
+.filterIcon,
+.filter__container--priceRange{
+  display:none;
+}
+.filterItem :global(.vtex-checkbox__line-container){
+  align-items:center;
+}
+.filterAvailable{
+  padding:24px 0 15px;
+}
+.filterTitleSpan{
+  color:#3A3434;
+  font-size:16px;
+}
+.filterItem :global(.vtex-checkbox__label){
+  color:#7B7979;
+  font-size:13px;
+  display:block;
+  padding:7px 0;
+}
+.filterItem :global(.vtex-checkbox__inner-container){
+  border:1px solid #7B7979;
+  width:19px;
+  height:19px;
+  border-radius:5px;
+  margin-right:0;
+}
+.filterItem :global(.vtex-checkbox__container){
+  width:19px;
+  height:19px;
+  margin-right:9px;
+}
+.filterTemplateOverflow{
+  padding-bottom:16px;
+}
+.filter__container{
+  border-color:#F1A1A3;
+}
+.filterItem :global(.vtex-checkbox__box){
+  margin:1px 0 0 1px;
+}
+.galleryTitle--layout{
+  font-size:28px;
+  font-weight:400;
+  color:#F1A1A3;
+  margin:0 0 33px;
+}
+.totalProducts--layout{
+  text-align:left;
+}
+.totalProducts--layout,
+.totalProducts--layout .totalProductsMessage{
+  padding:0;
+  color:#7B7979;
+  font-size:13px;
+  text-transform:none;
+  font-weight:400;
+}
+.totalProducts--layout::after{
+  content:"encontrados";
+  padding-left:4px;
+}
+.orderByDropdown{
+  padding:0;
+}
+.orderByButton{
+  padding:0;
+  border:0;
+}
+.caretIcon,
+.filterPopupTitle{
+  color:#F1A1A3;
+}
+.filterPopupTitle {
+  text-transform:none;
+}
+.filterPopupArrowIcon{
+  padding:0 0 0 10px;
+}
+.buttonShowMore :global(.vtex-button){
+  border: 1px solid #F1A1A3;
+  border-radius: 30px;
+  background: #FFF;
+  color: #3A3434;
+  padding: 12px 47px 10px;
+  transition: ease all .3s;
+  min-height:auto;
+}
+.buttonShowMore :global(.vtex-button):hover{
+  color: #FFF;
+  background: #F1A1A3;
+  transition: ease all .3s;
+}
+.buttonShowMore :global(.vtex-button__label){
+  text-transform:none;
+  font-size:0;
+  padding:0;
+}
+.buttonShowMore :global(.vtex-button__label)::before{
+  content:"Carregar mais produtos";
+  font-size:14px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--fetchprevious) .buttonShowMore :global(.vtex-button__label)::before{
+  content:"Voltar";
+  font-size:14px;
+}
+.buttonShowMore--layout{
+  margin:20px 0;
+}
+.orderByOptionsContainer{
+  z-index:100;
+  top:100%;
+}
+.gallery{
+  padding-left:0;
+}
+.galleryItem{
+  padding:0 0 20px;
 }
 
-.galleryLayoutOptionButton--selected {
-  background-color: #3F3F40;
-  color: #FFFFFF;
-}
-
-.galleryLayoutSwitcher {
-  border-radius: 4px 4px 4px 4px;
-  justify-content: center;
-  overflow: hidden;
-  width: auto !important;
-  align-self: center
-}
-
-.galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
+/* MOBILE */
+@media screen and (max-width: 1024px){
+  .searchResultContainer{
+    padding:0 15px;
+  }
+  .galleryTitle--layout{
+    color:#3A3434;
+    margin:0 0 13px;
+  }
+  .filterPopupButton{
+    padding:9px 17px;
+    height:auto;
+    border:1px solid #7B7979;
+    border-radius:5px;
+    flex-direction:row-reverse;
+    gap:11px;
+  }
+  .filterPopupTitle{
+    color:#3A3434;
+    font-size:13px;
+  }
+  .filterPopupArrowIcon{
+    padding:0;
+  }
+  .filterIcon--filterCol{
+    display:block;
+    width:18px;
+    height:19px;
+    transform: scale(0.8);
+  }
+  .filtersWrapperMobile--filterCol{
+    justify-content:flex-start;
+  }
+  .totalProducts--layout{
+    border:0;
+    text-align: center;
+  }
+  .filterPopupTitle{
+    color:#F1A1A3;
+  }
+  .filterPopupTitle .orderByText{
+    color:#251203;
+  }
+  .caretIcon{
+    margin-left:5px;
+  }
+  .galleryItem{
+    padding:0 5px;
+  }
+  .filterAccordionBreadcrumbs{
+    height:auto;
+    padding:18px 0 15px 24px;
+    background:#F1A1A3;
+  }
+  .filterBreadcrumbsContent--filterCol,
+  .filterBreadcrumbsItem--filterCol{
+    padding:0;
+  }
+  .filterBreadcrumbsText--filterCol{
+    color:#fff;
+    font:15px "Amiko Semibold";
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .filterBreadcrumbsText--filterCol::before{
+    content:"";
+    display:block;
+    width:9px;
+    height:14px;
+    background:url(assets/arrow-left.png);
+  }
+  .filterBreadcrumbsItemName--filterCol{
+    color:#fff;
+    font:15px "Amiko Semibold";
+    text-transform:uppercase;
+  }
+  .filterAccordionBreadcrumbs .caretIcon{
+    color:#fff;
+  }
+  .accordionFilterItemIcon{
+    display:none;
+  }
+  .accordionFilterContainer--filterCol{
+    padding-left:0;
+  }
+  .accordionFilterContent--filterCol{
+    padding:0 0 0 24px;
+  }
+  .filterAccordionItemBox{
+    min-height:auto;
+    padding:20px 0;
+    border-bottom-color:#DFDFDF;
+  }
+  .accordionFilterItemTitle--filterCol{
+    color:#3A3434;
+    font-size:15px;
+  }
+  .filterAccordionItemBox--faixa-de-preco{
+    display:none;
+  }
+  .accordionFilter{
+    height:auto;
+  }
+  .filterButtonsBox{
+    position: relative;
+  }
+  .filterApplyButtonWrapper--filterCol :global(.vtex-button),
+  .filterClearButtonWrapper--filterCol :global(.vtex-button){
+    border:1px solid #F1A1A3;
+    border-radius:30px;
+    min-height:auto;
+    padding:10px;
+  }
+  .filterApplyButtonWrapper--filterCol :global(.vtex-button__label),
+  .filterClearButtonWrapper--filterCol :global(.vtex-button__label){
+    padding:0 !important;
+    text-transform:none;
+  }
 }

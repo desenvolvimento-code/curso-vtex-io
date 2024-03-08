@@ -1,0 +1,25 @@
+{
+    "store.custom#colecao": {
+        "blocks": [
+            "search-result-layout.customQuery#colecao"
+        ]
+    },
+    "search-result-layout.customQuery#colecao":{
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 9,
+                "skusFilter": "ALL_AVAILABLE",
+                "simulationBehavior": "default",
+                "queryField": "138",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+}

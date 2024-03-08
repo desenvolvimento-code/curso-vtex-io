@@ -1,204 +1,311 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
-      "experimentalOptimizeRendering": true
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-principal"
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#novidades",
+      "menu-item#colecao",
+      "menu-item#feminino",
+      "menu-item#acessorios",
+      "menu-item#clube",
+      "menu-item#summer-sale"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#novidades": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-novidades",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/novidades",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
-      }
+        "tagTitle": "Novidades",
+        "text": "Novidades"
+      },
+      "blockClass": "menu-principal-item"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#novidades"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#novidades": {
     "props": {
-      "width": "auto"
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#novidades"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#novidades": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#camisetas",
+      "menu-item#calcas",
+      "menu-item#jardineiras",
+      "menu-item#salopetes",
+      "menu-item#bodies",
+      "menu-item#tapa-fralda",
+      "menu-item#ver-tudo"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#camisetas": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "id": "menu-item-camisetas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/novidades/camisetas",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      },
+      "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#calcas": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-calcas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/novidades/calcas",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
+        "tagTitle": "Calças",
+        "text": "Calças"
+      },
+      "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#jardineiras": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu-item-jardineiras",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "/novidades/jardineiras",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
+        "tagTitle": "Jardineiras",
+        "text": "Jardineiras"
+      },
+      "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#category-home": {
+  "menu-item#salopetes": {
     "props": {
-      "id": "menu-item-category-home",
+      "id": "menu-item-salopetes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/novidades/salopetes",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
+        "tagTitle": "Salopetes",
+        "text": "Salopetes"
+      },
+      "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#more": {
+  "menu-item#bodies": {
     "props": {
-      "id": "menu-item-custom-sale",
+      "id": "menu-item-bodies",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/novidades/bodies",
+        "noFollow": false,
+        "tagTitle": "Bodies",
+        "text": "Bodies"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#tapa-fralda": {
+    "props": {
+      "id": "menu-item-tapa-fralda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/novidades/tapa-fralda",
+        "noFollow": false,
+        "tagTitle": "Tapa Fralda",
+        "text": "Tapa Fralda"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#ver-tudo": {
+    "props": {
+      "id": "menu-item-ver-tudo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/novidades",
+        "noFollow": false,
+        "tagTitle": "Ver tudo",
+        "text": "Ver tudo"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+
+  "menu-item#colecao": {
+    "props": {
+      "id": "menu-item-colecao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao",
+        "noFollow": false,
+        "tagTitle": "Coleção",
+        "text": "Coleção"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#feminino": {
+    "props": {
+      "id": "menu-item-feminino",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/feminino",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
-      }
+        "tagTitle": "Feminino",
+        "text": "Feminino"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#acessorios": {
+    "props": {
+      "id": "menu-item-acessorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios",
+        "noFollow": true,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#clube": {
+    "props": {
+      "id": "menu-item-clube",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clube",
+        "noFollow": true,
+        "tagTitle": "Clube",
+        "text": "Clube"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#summer-sale": {
+    "props": {
+      "id": "menu-item-summer-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/summer-sale",
+        "noFollow": true,
+        "tagTitle": "Summer Sale",
+        "text": "Summer Sale"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#category-menu-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-principal-mobile"
+    },
+    "children": [
+      "menu-item#novidades-mobile",
+      "menu-item#colecao",
+      "menu-item#feminino",
+      "menu-item#acessorios",
+      "menu-item#clube",
+      "menu-item#summer-sale"
+    ]
+  },
+  "menu-item#novidades-mobile": {
+    "props": {
+      "id": "menu-item-novidades-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/novidades",
+        "noFollow": false,
+        "tagTitle": "Novidades",
+        "text": "Novidades"
+      },
+      "blockClass": "menu-principal-item"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#more"
+      "submenu.accordion#novidades"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
-    "props": {
-      "width": "100%"
+  "submenu.accordion#novidades":{
+    "props":{
+      "width":"100%",
+      "blockClass": "novidades-mobile"
     },
+    "children":["vtex.menu@2.x:menu#novidades-mobile"]
+  },
+  "vtex.menu@2.x:menu#novidades-mobile":{
     "children": [
-      "flex-layout.row#menu-more"
+      "flex-layout.col#novidades-mobile"
     ]
   },
-  "flex-layout.row#menu-more": {
+  "flex-layout.col#novidades-mobile":{
     "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
+      "menu-item#camisetas",
+      "menu-item#calcas",
+      "menu-item#jardineiras",
+      "menu-item#salopetes",
+      "menu-item#bodies",
+      "menu-item#tapa-fralda",
+      "menu-item#ver-tudo"
     ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
-    ]
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
-      }
-    }
-  },
-  "menu-item#faq": {
-    "props": {
-      "id": "menu-item-faq",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
-      }
-    }
-  },
-  "menu-item#contact-us": {
-    "props": {
-      "id": "menu-item-contact-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/contact-us",
-        "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
-      }
-    }
   }
 }

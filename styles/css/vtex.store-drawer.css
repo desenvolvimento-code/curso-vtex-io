@@ -1,0 +1,14 @@
+.closeIconContainer{
+    display:none;
+}
+.openIconContainer{
+    margin-right:10px;
+}
+.openIconContainer .menuIcon{
+    width:29px;
+    height:19px;
+    overflow:visible;
+}
+.childrenContainer{
+    padding:8px;
+}

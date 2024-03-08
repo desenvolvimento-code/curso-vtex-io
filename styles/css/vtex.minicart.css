@@ -1,0 +1,84 @@
+.minicartIconContainer .cartIcon{
+    width:19px;
+    height:19px;
+    overflow:visible;
+}
+.minicartQuantityBadgeDefault{
+    top:2px;
+    right:-20px;
+    background:transparent;
+    color:#43483B;
+    font-size:13px;
+}
+.drawerContent{
+    position: relative;
+    height:100%;
+}
+.childrenContainer{
+    height:100%;
+}
+.minicartSideBarContentWrapper{
+    height: 100% !important;
+}
+.closeIconContainer{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.closeIconButton{
+    padding:10px;
+}
+.minicartTitle{
+    background:#F1A1A3;
+    padding:16px 0 17px;
+    text-align:center;
+    color: #3a3434;
+    font-size:0;
+    margin:0;
+}
+.minicartTitle::before{
+    content:"Meu Carrinho";
+    font:15px "Amiko Semibold";
+}
+.minicartProductListContainer{
+    padding:0 19px;
+}
+.minicartSummary{
+    padding:0 16px 0 14px;
+}
+.minicartCheckoutButton {
+    margin:0 16px 39px;
+    padding:0;
+}
+.minicartCheckoutButton :global(.vtex-button) {
+    border-radius:100px;
+    min-height:auto;
+    border:0;
+    background:#F1A1A3;
+    text-transform: none;
+}
+.minicartCheckoutButton :global(.vtex-button__label) {
+    text-align:center;
+    font-size:0;
+    padding:15px 0 14px !important;
+    line-height:1;
+}
+.minicartCheckoutButton :global(.vtex-button__label)::before{
+    content:"Finalizar pedido";
+    font-size:14px;
+}
+.openIconContainer{
+    padding:0;
+}
+.openIconContainer :global(.vtex-button){
+    border:0;
+    min-height: auto;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+    .minicartContainer :global(.vtex-button__label){
+        padding-left:0;
+    }
+}

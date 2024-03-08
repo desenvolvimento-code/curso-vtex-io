@@ -1,0 +1,52 @@
+.homeIcon{
+    display:none;
+}
+.homeLink{
+    padding:0;
+}
+.homeLink::before{
+    content:"Home";
+    font-size:13px;
+    color:#7B7979;
+}
+.link,
+.term{
+    font-size:13px;
+    color:#7B7979;
+    padding:0;
+    line-height:1;
+}
+.arrow{
+    padding:0 5px;
+}
+.arrow::before{
+    content:"/";
+    font-size:13px;
+    color:#7B7979;
+    padding-right:5px;
+    line-height:1;
+}
+.link:hover,
+.arrow:last-child .link,
+.term{
+    color:#F1A1A3;
+}
+.container{
+    padding:10px 0;
+    display:flex;
+    align-items:center;
+}
+.caretIcon{
+    display:none;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+    .link:hover,
+    .arrow:last-child .link{
+        color:#43483B;
+    }
+    .container{
+        padding:22px 0 12px;
+    }
+}

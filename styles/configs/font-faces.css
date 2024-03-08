@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Amiko";
+    src: url(assets/fonts/Amiko-Regular.woff2), 
+         url(assets/fonts/Amiko-Regular.ttf);
+    font-display: swap;
+}
+ @font-face {
+    font-family: "Amiko Bold";
+    src: url(assets/fonts/Amiko-Bold.woff2), 
+         url(assets/fonts/Amiko-Bold.ttf);
+    font-display: swap;
+}
+ @font-face {
+    font-family: "Amiko Semibold";
+    src: url(assets/fonts/Amiko-SemiBold.woff2), 
+         url(assets/fonts/Amiko-SemiBold.ttf);
+    font-display: swap;
+}

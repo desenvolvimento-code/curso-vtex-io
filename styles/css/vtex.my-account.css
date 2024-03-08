@@ -1,0 +1,6 @@
+:global(.vtex-address-form__postalCode-forgottenURL) a,
+:global(.vtex-address-form__postalCode-forgottenURL) a:hover{
+  color:#7B7979;
+  font-size:13px;
+  text-decoration:underline;
+}

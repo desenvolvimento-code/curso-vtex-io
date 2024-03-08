@@ -1,17 +1,10 @@
-/* Blocks can be defined both on the store/blocks.json file, and in any number of json
- * files inside the store/blocks directory, with any arbitrary directory structure.
- *
- * Additionally, all blocks files can support comments, such as this one, if given the
- * .jsonc file extension.
- *
- * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
- * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
- */
 {
+  // PÁGINA DE PEDIDO CONFIRMADO
   "store.orderplaced": {
     "blocks": ["order-placed"]
   },
 
+  // PÁGINA MINHA CONTA
   "store.account": {
     "blocks": ["my-account"],
     "parent": {
@@ -19,36 +12,40 @@
     }
   },
 
+  // LOGIN
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": [
+      "login-content#default"
+    ]
   },
-
   "login-content#default": {
     "props": {
-      "isInitialScreenOptionOnly": false,
-      "defaultOption": 1,
+      "optionsTitle":"Acesse sua conta",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "accessCodePlaceholder":"Insira o código de acesso",
       "showPasswordVerificationIntoTooltip": true
     }
   },
 
+  // AVALIAÇÕES NATIVA DA VTEX (NÃO É BOA, SUGIRA PARA O CLIENTE CONTRATAR UMA FERRAMENTA TERCEIRA)
   "store.product-review-form": {
     "blocks": ["product-review-form"]
   },
 
+  // PRODUTO NÃO ENCONTRADO
   "store.not-found#product": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#notfound"      
+    ]
   },
 
+  // BUSCA NÃO ENCONTRADA
   "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
-  },
-
-  "rich-text#not-found": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "**PAGE NOT FOUND**",
-      "font": "t-heading-1"
-    }
+    "blocks": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#notfound"      
+    ]
   }
 }

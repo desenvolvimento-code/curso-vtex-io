@@ -1,0 +1,22 @@
+.link--instagramTitle{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    font-size:28px;
+    color:#3A3434;
+    margin:46px 0 27px;
+}
+.link--link-footer{
+    font-size:13px;
+    color:#3A3434;
+    text-decoration:none;
+    display:block;
+    margin-bottom:12px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+    .link--instagramTitle{
+        margin:21px 0 17px;
+    }
+}

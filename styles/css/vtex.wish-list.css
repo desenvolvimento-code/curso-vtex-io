@@ -1,0 +1,19 @@
+.wishlistIconContainer :global(.vtex-button){
+    border:0;
+    background:transparent;
+    min-height:auto;
+}
+.wishlistIconContainer :global(.vtex-button__label){
+    padding:0 !important;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+    .wishlistIconContainer--wishlist-shelf{
+        position:absolute;
+        right:0;
+        bottom: -70px;
+        z-index: 9;
+        text-align: right;
+    }
+}

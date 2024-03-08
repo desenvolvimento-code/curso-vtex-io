@@ -1,43 +1,94 @@
 {
-  "vtex.menu@2.x:menu#websites": {
+  "flex-layout.row#2-desktop":{
+    "props": {
+      "blockClass": "topbar",
+      "colSizing": "auto"
+    },
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "flex-layout.col#2-desktop-col-1",
+      "flex-layout.col#spacer",
+      "flex-layout.col#2-desktop-col-2"
     ]
   },
-  "menu-item#shop": {
+  "flex-layout.col#2-desktop-col-1":{
     "props": {
-      "id": "menu-item-shop",
+      "blockClass": "topbar"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#top-menu"
+    ]
+  },
+  "vtex.menu@2.x:menu#top-menu": {
+    "props": {
+      "blockClass": "topbar"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#trocas-e-devolucoes"
+    ]
+  },
+  "menu-item#quem-somos": {
+    "props": {
+      "id": "menu-item-quem-somos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/quem-somos",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      },
+      "blockClass": "topbar"
     }
   },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
+  "menu-item#trocas-e-devolucoes": {
     "props": {
-      "id": "menu-item-vtex-website",
+      "id": "menu-item-trocas-e-devolucoes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/trocas-e-devolucoes",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
-      }
+        "tagTitle": "Trocas e Devoluções",
+        "text": "Trocas e Devoluções"
+      },
+      "blockClass": "topbar"
+    }
+  },
+  "flex-layout.col#2-desktop-col-2":{
+    "props": {
+      "blockClass": ["topbar", "topbar-right"],
+      "width":"35%"
+    },
+    "children": [
+      "flex-layout.row#2-desktop-col-2-1"
+    ]
+  },
+  "flex-layout.row#2-desktop-col-2-1":{
+    "children": [
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "right"
+    }
+  },
+  "login": {
+    "props": {
+      "iconLabel": "Entre ou cadastre-se",
+      "showIconProfile":true,
+      "optionsTitle":"Acesse sua conta",
+      "emailAndPasswordTitle": "Login",
+      "accessCodeTitle": "Receba sua chave por e-mail",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "accessCodePlaceholder":"Insira o código de acesso",
+      "showPasswordVerificationIntoTooltip": true
     }
   }
 }

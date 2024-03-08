@@ -1,0 +1,43 @@
+/* PRATELEIRA */
+.relatedProducts--related-shelf{
+  margin-bottom:70px;
+}
+.dot{
+  width:32px;
+  height:7px;
+  background:#D7D7D7;
+  border-radius:10px;
+}
+.dot--isActive{
+  background:#F1A1A3;
+}
+.arrow{
+  background:#fff !important;
+  border-radius:50%;
+  margin:0;
+  padding:11px 11px 12px 17px;
+  border:1px solid #E2E2E2;
+  top:36%;
+}
+.caretIcon--related-shelf{
+  width:16px;
+  height:21px;
+}
+.arrowLeft{
+  left:-10px;
+}
+.arrowRight{
+  right:-10px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+  .sliderTrack--shelf,
+  .shelfContentContainer--related-shelf :global(.vtex-slider-0-x-sliderFrame){
+    gap:10px;
+  }
+  .arrowLeft--related-shelf,
+  .arrowRight--related-shelf{
+    display: none;
+  }
+}

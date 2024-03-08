@@ -1,0 +1,26 @@
+.trigger--product-description,
+.trigger--footer-payments{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border:0;
+    padding:15px 0;
+    background:#fff;
+    cursor:pointer;
+    width:100%;
+}
+.trigger--footer-payments::after{
+    content:"";
+    width:8px;
+    height:14px;
+    display:block;
+    background:url(assets/arrow-menu.png) no-repeat transparent;
+    transition:0.5s ease all;
+}
+.trigger--footer-payments--visible::after{
+    transform:rotate(90deg);
+    transition:0.5s ease all;
+}
+.content--footer-payments{
+    padding:10px 0;
+}

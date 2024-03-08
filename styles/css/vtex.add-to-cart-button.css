@@ -1,0 +1,8 @@
+.buttonText{
+    color:#E92328;
+    font-size:14px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-button-pdp) .buttonText{
+    color:#fff;
+    font:14px "Amiko Semibold";
+}

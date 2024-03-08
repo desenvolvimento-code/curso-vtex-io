@@ -1,0 +1,121 @@
+/* MENU TOPBAR */
+.styledLinkContainer--topbar{
+    margin:0;
+    padding:0;
+}
+.styledLink--topbar{
+    color:#4F4242;
+    font-size:12px;
+}
+.menuItem--topbar{
+    margin-right:16px;
+}
+.menuContainerNav--topbar{
+    margin-top:5px;
+}
+
+/* MENU PRINCIPAL */
+.menuContainerNav--menu-principal{
+    margin-left:70px;
+}
+.menuContainer--menu-principal{
+    gap:40px;
+}
+.styledLinkContainer--menu-principal-item{
+    margin:0;
+    padding:0;
+}
+.styledLink--menu-principal-item{
+    color:#4F4242;
+    font-size:15px;
+}
+.submenuWrapper--menu-principal-submenu--isOpen{
+    padding:13px 23px;
+    margin:0;
+    border-bottom:0;
+}
+.styledLink--menu-principal-subitem{
+    color:#4F4242;
+    font-size:13px;
+}
+.styledLinkContainer--menu-principal-subitem{
+    margin:0;
+    padding:0;
+}
+.menuContainer--menu-principal-submenu{
+    gap:10px;
+}
+.styledLink--menu-principal-subitem--highlight{
+    color:#F1A1A3;
+    text-decoration:underline;
+}
+.menuContainer--menu-footer .styledLinkContainer{
+    margin:0;
+    padding:0;
+}
+.menuContainer--menu-footer .styledLink{
+    font-size:13px;
+    color:#3A3434;
+}
+.menuContainer--menu-footer .menuItem{
+    margin:0;
+}
+.menuContainer--menu-footer{
+    gap:12px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+    .menuContainerNav{
+      width:100%;
+    }
+    .styledLinkContent--menu-principal-item,
+    .styledLinkContent--menu-principal-subitem{
+        padding:18px 23px;
+        border-bottom:1px solid #DFDFDF;
+        font-size:15px;
+        color:#3A3434;
+    }
+    .styledLink--menu-principal-subitem--highlight .styledLinkContent--menu-principal-subitem{
+        color:#F1A1A3;
+    }
+    .accordionIcon--menu-principal-item,
+    .menuContainer--footer-mobile .accordionIcon{
+        font-size:0;
+        width:8px;
+        height:14px;
+        display:block;
+        background:url(assets/arrow-menu.png) no-repeat transparent;
+        transition:0.5s ease all;
+    }
+    .accordionIcon--isOpen,
+    .menuContainer--footer-mobile .accordionIcon--isOpen{
+        transform:rotate(90deg);
+        transition:0.5s ease all;
+    }
+
+    /* RODAPÉ */
+    .menuContainer--footer-mobile .styledLinkContainer{
+        margin:0;
+        padding:0;
+    }
+    .menuContainer--footer-mobile .styledLinkContent{
+        font:12px "Amiko Semibold";
+        text-transform:uppercase;
+        color:#3A3434;
+    }
+    .menuContainer--footer-mobile .menuItem{
+        padding:14px 0;
+        border-bottom:1px solid #DFDFDF;
+    }
+    .menuContainer--footer-mobile .submenuAccordion{
+        padding-left:0;
+        margin-top:20px;
+    }
+    .menuContainer--footer-mobile .submenuAccordion .menuItem{border-bottom:0;}
+    .menuContainer--footer-mobile .submenuAccordion .styledLinkContent{
+        text-transform: capitalize;
+        font:12px "Amiko";
+    }
+    
+}

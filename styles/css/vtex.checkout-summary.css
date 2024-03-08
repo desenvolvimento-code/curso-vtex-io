@@ -1,0 +1,17 @@
+.summarySmallContent {
+    border-top:1px solid #F1A1A3;
+}
+.summarySmallDisclaimer{
+    display:none;
+}
+.summaryItemContainer{
+    margin:22px 0 23px;
+}
+.summaryItemLabel{
+    font-size:14px;
+    color:#3A3434;
+}
+.price{
+    color:#F1A1A3;
+    font:16px "Amiko Semibold";
+}

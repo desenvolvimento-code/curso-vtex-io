@@ -1,0 +1,26 @@
+.productImageContainer{
+    width:56px !important;
+}
+.productImage {
+    border-radius:0;
+}
+.productName{
+    font-size:14px;
+    color:#3A3434;
+    display:block;
+    height:38px;
+    overflow:hidden;
+    margin-bottom:9px;
+}
+.productPrice{
+    color:#F1A1A3;
+    font:14px "Amiko Semibold";
+}
+.quantityDropdownContainer :global(.vtex-dropdown__container){
+    border-radius:5px;
+    border:1px solid #F1A1A3;
+    height:auto;
+}
+.quantityDropdownContainer :global(.vtex-dropdown__button){
+    padding:4px 15px;
+}

@@ -1,90 +1,116 @@
-.container--deals {
-  color: #ffffff;
-  text-align: center;
-  justify-content: center;
+/* TOPO */
+.paragraph--notification{
+  color:#000;
+  font-size:12px;
+  margin:0;
+  line-height:1;
 }
 
 .container--shelfTitle {
-  color: #727273;
   justify-content: center;
   text-align: center;
 }
-
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+  font-size:28px;
+  font-weight:400;
+  color:#3A3434;
+  margin:18px 0 24px;
 }
 
-.container--deals .paragraph {
-  margin: 0;
+/* INSTITUCIONAIS */
+/* QUEM SOMOS */
+.heading--titulo-institucionais{
+  color: #3A3434;
+  font-size:28px;
+  font-weight:400;
+  margin:0 0 25px;
+}
+.paragraph--conteudo-institucionais{
+  font-size:15px;
+  color: #3A3434;
+  margin:0;
 }
 
-.container--link {
-  justify-content: center;
+/* RODAPÉ */
+.container--title-newsletter{
+  justify-content:center;
+}
+.heading--title-newsletter{
+  margin: 0 0 35px;
+  font-size:25px;
+  color:#fff;
+}
+.container--credits{
+  justify-content:center;
+}
+.paragraph--credits{
+  margin:9px 0 13px;
+  color:#7B7979;
+  font-size:12px;
+}
+.paragraph--title-footer{
+  margin:0 0 14px;
+  color:#3A3434;
+  font:14px "Amiko Semibold";
+  text-transform:uppercase;
 }
 
-.container--question {
-  justify-content: center;
+/* PLP */
+.container--notfound{
+  justify-content:center;
+}
+.paragraph--notfound{
+  font-size:28px;
+  font-weight:400;
+  color:#3A3434;
+  margin:18px 0 24px;
 }
 
-.container--question .paragraph {
-  text-align: center;
-  max-width: 540px;
-  margin: 0 16px;
-  padding-top: 120px;
-  color: #03034E;
+/* PDP */
+.paragraph--product-description{
+  margin:0;
+  color:#3A3434;
+  font-size:13px;
+  text-transform:uppercase;
+}
+.paragraph--guia-de-medidas{
+  margin:10px 0 20px;
+  font-size:13px;
+  color:#3A3434;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+}
+.container--produtos-relacionados{
+  justify-content:center;
+}
+.paragraph--produtos-relacionados{
+  margin:48px 0 27px;
+  font-size:28px;
+  color:#3A3434;
 }
 
-.container--question .strong {
-  font-size: 32px;
-  line-height: 2rem;
-  font-weight: 700;
-}
-
-.container--link .paragraph {
-  text-align: center;
-  max-width: 540px;
-  padding-top: 36px;
-  padding-bottom: 84px;
-  color: #03034E;
-}
-
-.container--link .strong {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.container--link .link {
-  text-decoration: none;
-  font-size: 36px;
-  font-weight: 300;
-  color: #03034E;
-}
-
-.container--title {
-  color: #03034E;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-@media only screen and (min-width: 640px) {
-  .container--question .strong {
-    font-size: 40px;
-    line-height: 3rem;
+/* MOBILE */
+@media screen and (max-width: 1024px){
+  .headingLevel2--shelfTitle{
+    font-size:20px;
+    margin:16px 0 14px;
   }
-
-  .container--about {
-    max-width: 85%;
+  .heading--title-newsletter{
+    margin: 0 0 32px;
+    font-size:20px;
+    text-align:center;
   }
-
-  .container--title {
-    color: #03034E;
-    font-size: 40px;
-    font-weight: 700;
-    max-width: 60%;
+  .paragraph--title-footer{
+    font: 12px "Amiko Semibold";
+    text-transform: uppercase;
+    color: #3A3434;
+    margin:0;
   }
-
-  .container--title .paragraph {
-    line-height: 1.3em;
+  .paragraph--produtos-relacionados{
+    margin:38px 0 14px;
+    font-size:20px;
   }
 }
