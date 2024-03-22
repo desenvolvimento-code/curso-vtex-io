@@ -7,7 +7,8 @@
       "flex-layout.row#shelf",
       "flex-layout.row#mosaico-home",
       "link#instagram-title",
-      "flex-layout.row#instagram-home"
+      "flex-layout.row#instagram-home",
+      "flex-layout.row#blog-home"
     ]
   },
 
@@ -186,6 +187,22 @@
     "props": {
       "src": "assets/instagram-4.png",
       "alt": "Instagram 4"
+    }
+  },
+  
+  "flex-layout.row#blog-home":{
+    "children": [
+      "blog-latest-posts-preview.wordpress-latest-posts-preview"
+    ]
+  },
+  "blog-latest-posts-preview.wordpress-latest-posts-preview":{
+    "props":{
+      "useTextOverlays": false,
+      "showExcerpts":true,
+      "showDates":false,
+      "showCategories":false,
+      "absoluteLinks":true,
+      "numberOfPosts":3
     }
   }
 }

@@ -65,11 +65,14 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
     "vtex.search": "2.x",
-    "vtex.store-newsletter": "1.x"
+    "vtex.store-newsletter": "1.x",
+    "vtex.iframe": "0.x",
+    "vtex.sandbox": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
-    "vtex.wish-list": "1.x"
+    "vtex.wish-list": "1.x",
+    "vtex.wordpress-integration": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

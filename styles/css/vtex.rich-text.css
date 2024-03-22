@@ -92,6 +92,64 @@
   color:#3A3434;
 }
 
+/* INSTITUCIONAIS */
+.heading--titulo-menu-institucionais{
+  margin:0 0 14px 25px;
+  color:#fff;
+  font-size:22px;
+  font-weight:normal;
+}
+.wrapper--item-menu-institucionais{
+  width:100%;
+}
+.paragraph--item-menu-institucionais{
+  margin:0;
+}
+.link--item-menu-institucionais{
+  color:#fff;
+  text-decoration:none;
+  padding:15px 0 15px 22px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin:5px 0;
+  border-left:5px solid transparent;
+  font:13px "Amiko Semibold";
+}
+.link--item-menu-institucionais-active{
+  background:#fff;
+  color:#3A3434;
+  box-shadow:0 4px 4px rgba(0,0,0,0.25);
+  border-left-color:#FFDDDE;
+}
+.link--item-menu-institucionais::before{
+  content:"";
+  display:block;
+  width:22px;
+  height:18px;
+}
+.link--item-menu-institucionais-1::before{
+  background:url(assets/icon-institucionais-1.png) no-repeat center transparent;
+}
+.link--item-menu-institucionais-2::before{
+  background:url(assets/icon-institucionais-2.png) no-repeat center transparent;
+}
+.link--item-menu-institucionais-3::before{
+  background:url(assets/icon-institucionais-3.png) no-repeat center transparent;
+}
+.link--item-menu-institucionais-4::before{
+  background:url(assets/icon-institucionais-1.png) no-repeat center transparent;
+}
+.link--item-menu-institucionais-5::before{
+  background:url(assets/icon-institucionais-2.png) no-repeat center transparent;
+}
+.link--item-menu-institucionais-6::before{
+  background:url(assets/icon-institucionais-3.png) no-repeat center transparent;
+}
+.link--item-menu-institucionais-7::before{
+  background:url(assets/icon-institucionais-4.png) no-repeat center transparent;
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px){
   .headingLevel2--shelfTitle{

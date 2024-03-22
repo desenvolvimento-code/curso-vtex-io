@@ -8,15 +8,6 @@
   border-bottom:1px solid #F1A1A3;
 }
 
-/* INSTITUCIONAIS */
-/* QUEM SOMOS */
-.flexRow--pagina-institucional{
-  margin:66px 0 42px;
-}
-.flexCol--conteudo-institucionais{
-  margin-left:133px;
-}
-
 /* MINICART */
 .flexRow--minicart-content{
   padding:14px 0;
@@ -156,6 +147,21 @@
   padding-bottom:10px;
 }
 
+/* INSTITUCIONAIS */
+.flexRow--pagina-institucional{
+  margin:66px 0 42px;
+}
+.flexCol--conteudo-institucionais{
+  margin-left:133px;
+  height: fit-content;
+}
+.flexCol--menu-institucionais{
+  background:#F1A1A3;
+  padding:25px 0;
+  height: fit-content;
+  box-shadow:0 2px 4px rgba(0,0,0,0.16);
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px){
   .flexRow--main-header-mobile{
@@ -231,5 +237,18 @@
   }
   .flexRowContent--product-name{
     position:relative;
+  }
+
+  /* INSTITUCIONAIS */
+  .flexRowContent--pagina-institucional{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  .flexCol--conteudo-institucionais{
+    margin-left:0;
+    margin-bottom:30px;
+  }
+  .flexRow--pagina-institucional{
+    margin:20px 0;
   }
 }

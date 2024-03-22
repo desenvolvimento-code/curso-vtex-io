@@ -1,0 +1,92 @@
+{
+  "rich-text#titulo-menu-institucionais":{
+    "props": {
+        "text": "## Institucional",
+        "blockClass":"titulo-menu-institucionais"
+    }
+  },
+  "rich-text#item-menu-quem-somos":{
+    "props": {
+        "text": "[Quem somos](/quem-somos)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-1"]
+    }
+  },
+  "rich-text#item-menu-guia-de-tamanhos":{
+    "props": {
+        "text": "[Guia de Tamanhos](/guia-de-tamanhos)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-2"]
+    }
+  },
+  "rich-text#item-menu-trocas-e-devolucoes":{
+    "props": {
+        "text": "[Trocas e Devoluções](/trocas-e-devolucoes)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-3"]
+    }
+  },
+  "rich-text#item-menu-cancelamento":{
+    "props": {
+        "text": "[Cancelamento](/cancelamento)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-4"]
+    }
+  },
+  "rich-text#item-menu-politica-de-privacidade":{
+    "props": {
+        "text": "[Política de Privacidade](/politica-de-privacidade)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-5"]
+    }
+  },
+  "rich-text#item-menu-perguntas-frequentes":{
+    "props": {
+        "text": "[Perguntas Frequentes](/perguntas-frequentes)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-6"]
+    }
+  },
+  "rich-text#item-menu-contato":{
+    "props": {
+        "text": "[Contato](/contato)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-7"]
+    }
+  },
+  "rich-text#item-menu-quem-somos-active":{
+    "props": {
+        "text": "[Quem somos](/quem-somos)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-active","item-menu-institucionais-1"]
+    }
+  },
+  "rich-text#item-menu-guia-de-tamanhos-active":{
+    "props": {
+        "text": "[Guia de Tamanhos](/guia-de-tamanhos)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-active","item-menu-institucionais-2"]
+    }
+  },
+  "rich-text#item-menu-trocas-e-devolucoes-active":{
+    "props": {
+        "text": "[Trocas e Devoluções](/trocas-e-devolucoes)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-active","item-menu-institucionais-3"]
+    }
+  },
+  "rich-text#item-menu-cancelamento-active":{
+    "props": {
+        "text": "[Cancelamento](/cancelamento)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-active","item-menu-institucionais-4"]
+    }
+  },
+  "rich-text#item-menu-politica-de-privacidade-active":{
+    "props": {
+        "text": "[Política de Privacidade](/politica-de-privacidade)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-active","item-menu-institucionais-5"]
+    }
+  },
+  "rich-text#item-menu-perguntas-frequentes-active":{
+    "props": {
+        "text": "[Perguntas Frequentes](/perguntas-frequentes)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-active","item-menu-institucionais-6"]
+    }
+  },
+  "rich-text#item-menu-contato-active":{
+    "props": {
+        "text": "[Contato](/contato)",
+        "blockClass":["item-menu-institucionais","item-menu-institucionais-active","item-menu-institucionais-7"]
+    }
+  }
+}

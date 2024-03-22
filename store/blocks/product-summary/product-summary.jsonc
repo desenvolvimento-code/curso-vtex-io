@@ -60,6 +60,7 @@
       "product-summary-name",
       "product-list-price#summary",
       "product-selling-price#summary",
+      "product-spot-price#summary",
       "product-installments#summary"
     ],
     "props": {
@@ -78,7 +79,14 @@
       "blockClass": "summary",
       "message":"{sellingPriceValue}"
     }
-  },  
+  },
+  "product-spot-price#summary":{
+    "props":{
+      "blockClass": "summary",
+      "message":"ou {spotPriceValue} à vista",
+      "alwaysShow":true
+    }
+  },
   "product-installments#summary": {
     "props": {
       "blockClass": "summary",

@@ -1,0 +1,208 @@
+{
+  "store.custom#perguntas-frequentes": {
+    "blocks": [
+      "flex-layout.row#perguntas-frequentes"
+    ]
+  },
+  "flex-layout.row#perguntas-frequentes": {
+    "props": {
+      "blockClass": "pagina-institucional"
+    },
+    "children": [
+      "flex-layout.col#menu-institucionais-perguntas-frequentes",
+      "flex-layout.col#perguntas-frequentes"
+    ]
+  },
+  
+  "flex-layout.col#menu-institucionais-perguntas-frequentes":{
+    "props": {
+      "width":"22%",
+      "blockClass":"menu-institucionais"
+    },
+    "children": [
+      "rich-text#titulo-menu-institucionais",
+      "rich-text#item-menu-quem-somos",
+      "rich-text#item-menu-guia-de-tamanhos",
+      "rich-text#item-menu-trocas-e-devolucoes",
+      "rich-text#item-menu-cancelamento",
+      "rich-text#item-menu-politica-de-privacidade",
+      "rich-text#item-menu-perguntas-frequentes-active",
+      "rich-text#item-menu-contato"
+    ],
+    "title": "Menu Institucionais"
+  },
+
+  "flex-layout.col#perguntas-frequentes": {
+    "children": [
+      "rich-text#perguntas-frequentes",
+      "disclosure-layout-group#perguntas-frequentes"
+    ],
+    "props": {
+      "width":"78%",
+      "blockClass": "conteudo-institucionais"
+    },
+    "title": "Conteúdo Perguntas Frequentes"
+  },
+  "rich-text#perguntas-frequentes": {
+    "props": {
+      "text": "# Perguntas frequentes",
+      "blockClass": "titulo-institucionais"
+    },
+    "title": "Título Política de Privacidade"
+  },
+
+  "disclosure-layout-group#perguntas-frequentes": {
+    "children": [
+      "disclosure-layout#perguntas-frequentes-1",
+      "disclosure-layout#perguntas-frequentes-2",
+      "disclosure-layout#perguntas-frequentes-3",
+      "disclosure-layout#perguntas-frequentes-4"
+    ]
+  },
+
+  "disclosure-layout#perguntas-frequentes-1": {
+    "children": [
+      "disclosure-trigger#perguntas-frequentes-1",
+      "disclosure-content#perguntas-frequentes-1"
+    ]
+  },
+  "disclosure-trigger#perguntas-frequentes-1": {
+    "props": {
+      "blockClass": "question"
+    },
+    "children": [
+      "rich-text#perguntas-frequentes-1",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#perguntas-frequentes-1": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#perguntas-frequentes-1-1"]
+  },
+  "rich-text#perguntas-frequentes-1": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#perguntas-frequentes-1-1": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+
+  "disclosure-layout#perguntas-frequentes-2": {
+    "children": [
+      "disclosure-trigger#perguntas-frequentes-2",
+      "disclosure-content#perguntas-frequentes-2"
+    ]
+  },
+  "disclosure-trigger#perguntas-frequentes-2": {
+    "props": {
+      "blockClass": "question"
+    },
+    "children": [
+      "rich-text#perguntas-frequentes-2",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#perguntas-frequentes-2": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#perguntas-frequentes-2-1"]
+  },
+  "rich-text#perguntas-frequentes-2": {
+    "props": {
+      "text": "How can I track my order?"
+    }
+  },
+  "rich-text#perguntas-frequentes-2-1": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
+
+  "disclosure-layout#perguntas-frequentes-3": {
+    "children": [
+      "disclosure-trigger#perguntas-frequentes-3",
+      "disclosure-content#perguntas-frequentes-3"
+    ]
+  },
+  "disclosure-trigger#perguntas-frequentes-3": {
+    "props": {
+      "blockClass": "question"
+    },
+    "children": [
+      "rich-text#perguntas-frequentes-3",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#perguntas-frequentes-3": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#perguntas-frequentes-3-1"]
+  },
+  "rich-text#perguntas-frequentes-3": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#perguntas-frequentes-3-1": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+
+
+  "disclosure-layout#perguntas-frequentes-4": {
+    "children": [
+      "disclosure-trigger#perguntas-frequentes-4",
+      "disclosure-content#perguntas-frequentes-4"
+    ]
+  },
+  "disclosure-trigger#perguntas-frequentes-4": {
+    "props": {
+      "blockClass": "question"
+    },
+    "children": [
+      "rich-text#perguntas-frequentes-4",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#perguntas-frequentes-4": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#perguntas-frequentes-4-1"]
+  },
+  "rich-text#perguntas-frequentes-4": {
+    "props": {
+      "text": "How can I track my order?"
+    }
+  },
+  "rich-text#perguntas-frequentes-4-1": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  }
+}

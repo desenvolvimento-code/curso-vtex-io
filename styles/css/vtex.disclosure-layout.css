@@ -1,5 +1,6 @@
 .trigger--product-description,
-.trigger--footer-payments{
+.trigger--footer-payments,
+.trigger--question{
     display:flex;
     align-items:center;
     justify-content:space-between;

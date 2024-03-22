@@ -1,0 +1,124 @@
+{
+  "store.custom#contato": {
+    "blocks": [
+      "flex-layout.row#contato"
+    ]
+  },
+  "flex-layout.row#contato": {
+    "props": {
+      "blockClass": "pagina-institucional"
+    },
+    "children": [
+      "flex-layout.col#menu-institucionais-contato",
+      "flex-layout.col#contato"
+    ]
+  },
+  
+  "flex-layout.col#menu-institucionais-contato":{
+    "props": {
+      "width":"22%",
+      "blockClass":"menu-institucionais"
+    },
+    "children": [
+      "rich-text#titulo-menu-institucionais",
+      "rich-text#item-menu-quem-somos",
+      "rich-text#item-menu-guia-de-tamanhos",
+      "rich-text#item-menu-trocas-e-devolucoes",
+      "rich-text#item-menu-cancelamento",
+      "rich-text#item-menu-politica-de-privacidade",
+      "rich-text#item-menu-perguntas-frequentes",
+      "rich-text#item-menu-contato-active"
+    ],
+    "title": "Menu Institucionais"
+  },
+
+  "flex-layout.col#contato": {
+    "children": [
+      "rich-text#contato",
+      "form#contato"
+    ],
+    "props": {
+      "width":"78%",
+      "blockClass": "conteudo-institucionais"
+    },
+    "title": "Conteúdo Contato"
+  },
+  "rich-text#contato": {
+    "props": {
+      "text": "# Contato",
+      "blockClass": "titulo-institucionais"
+    }
+  },
+
+  "form#contato": {
+    "props": {
+      "entity": "CO",
+      "schema": "contact"
+    },
+    "blocks": [
+      "form-success#contato"
+    ],
+    "children": [
+      "form-input.text#nome",
+      "form-input.text#email",
+      "form-input.text#telefone",
+      "form-field-group#assunto",
+      "form-input.textarea#mensagem",
+      "form-submit#contact"
+    ]
+  },
+
+  "form-success#contato": {
+    "children": [
+      "rich-text#success-submit"
+    ]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Obrigado por entrar em contato conosco, em breve retornaremos.",
+      "blockClass":"success-submit"
+    }
+  },
+
+  "form-input.text#nome": {
+    "props": {
+      "pointer": "#/properties/nome",
+      "placeholder": "Coloque seu nome completo",
+      "label":"Nome: "
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder":"Digite seu e-mail",
+      "label":"E-mail: "
+    }
+  },
+  "form-input.text#telefone": {
+    "props": {
+      "pointer": "#/properties/telefone",
+      "placeholder":"Digite seu telefone",
+      "label": "Telefone: "
+    }
+  },
+  "form-field-group#assunto": {
+    "props": {
+      "pointer": "#/properties/assunto",
+      "uiSchema":"select",
+      "label": "Assunto: "
+    }
+  },
+  "form-input.textarea#mensagem": {
+    "props": {
+      "pointer": "#/properties/mensagem",
+      "label": "Mensagem: ",
+      "placeholder":"Deixe aqui sua pergunta"
+    }
+  },
+
+  "form-submit#contact": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}

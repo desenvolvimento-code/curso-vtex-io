@@ -1,0 +1,61 @@
+{
+  "store.custom#politica-de-privacidade": {
+    "blocks": [
+      "flex-layout.row#politica-de-privacidade"
+    ]
+  },
+  "flex-layout.row#politica-de-privacidade": {
+    "props": {
+      "blockClass": "pagina-institucional"
+    },
+    "children": [
+      "flex-layout.col#menu-institucionais-politica-de-privacidade",
+      "flex-layout.col#conteudo-politica-de-privacidade"
+    ],
+    "title": "Página Política de Privacidade"
+  },
+  "flex-layout.col#menu-institucionais-politica-de-privacidade":{
+    "props": {
+      "width":"22%",
+      "blockClass":"menu-institucionais"
+    },
+    "children": [
+      "rich-text#titulo-menu-institucionais",
+      "rich-text#item-menu-quem-somos",
+      "rich-text#item-menu-guia-de-tamanhos",
+      "rich-text#item-menu-trocas-e-devolucoes",
+      "rich-text#item-menu-cancelamento",
+      "rich-text#item-menu-politica-de-privacidade-active",
+      "rich-text#item-menu-perguntas-frequentes",
+      "rich-text#item-menu-contato"
+    ],
+    "title": "Menu Institucionais"
+  },
+
+  "flex-layout.col#conteudo-politica-de-privacidade": {
+    "children": [
+      "rich-text#titulo-politica-de-privacidade",
+      "rich-text#texto-politica-de-privacidade"
+    ],
+    "props": {
+      "width":"78%",
+      "blockClass": "conteudo-institucionais"
+    },
+    "title": "Conteúdo Política de Privacidade"
+  },
+
+  "rich-text#titulo-politica-de-privacidade": {
+    "props": {
+      "text": "# Política de Privacidade",
+      "blockClass": "titulo-institucionais"
+    },
+    "title": "Título Política de Privacidade"
+  },
+  "rich-text#texto-politica-de-privacidade": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. \n \n Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "blockClass": "conteudo-institucionais"
+    },
+    "title": "Conteúdo Política de Privacidade"
+  }
+}
