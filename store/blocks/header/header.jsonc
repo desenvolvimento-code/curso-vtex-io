@@ -5,6 +5,15 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  "header#topo-home": {
+    "blocks": ["header-layout.desktop#topo-home", "header-layout.mobile"]
+  },
+  "header-layout.desktop#topo-home": {
+    "children": [
+      "sticky-layout#3-desktop"
+    ]
+  },
+
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",

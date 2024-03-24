@@ -9,7 +9,10 @@
       "link#instagram-title",
       "flex-layout.row#instagram-home",
       "flex-layout.row#blog-home"
-    ]
+    ],
+    "parent": {
+      "header": "header#topo-home"
+    }
   },
 
   "list-context.image-list#banner-principal": {
